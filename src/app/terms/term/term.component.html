@@ -1,0 +1,16 @@
+<article class="term">
+    <!--
+        Event binding used to let users select a term to display more details
+        Note that there is no method call, click is just being bound to an expression
+    -->
+    <h1 class="name" (click)="selected=!selected">{{term.name}}</h1>
+    <!--
+        ngIf structural directive to only display information 
+        if this item has been selected. String interpolation used to
+        output the preoperties of the term inside the paragraph
+    -->
+    <p *ngIf="selected">
+        Category: {{term.category}}<br>
+        Definition: {{term.definition}}
+    </p>
+</article>

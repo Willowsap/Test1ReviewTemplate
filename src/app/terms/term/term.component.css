@@ -1,0 +1,17 @@
+.term {
+    background-color: lavenderblush;
+    color: black;
+    margin-bottom: 10px;
+}
+
+h1.name {
+    padding: 1%;
+}
+
+h1.name:hover {
+    cursor: pointer;
+}
+
+.term p {
+    padding: 1%;
+}

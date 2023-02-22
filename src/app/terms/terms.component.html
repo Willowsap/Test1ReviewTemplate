@@ -1,0 +1,13 @@
+<section>
+    <!--
+        ngFor structural directive being used to output
+        one app-term element for every item in the terms array
+
+        The term property of app-term is being property bound to
+        the corresponding value in the terms array
+    -->
+    <app-term 
+        *ngFor="let term of terms"
+        [term]="term">
+    </app-term>
+</section>
